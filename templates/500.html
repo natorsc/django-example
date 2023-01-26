@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% block title %}Erro 500, erro interno inesperado{% endblock %}
+{% block content %}
+<section>
+    <div class="container">
+        <h1>500</h1>
+        <h2>Erro interno inesperado</h2>
+        <p>Desculpe. Ocorreu um erro inesperado.</p>
+        <p>Se o problema persistir entre em contato com <a
+                href="mailto:webmaster@localhost?subject=500 Erro interno inesperado&body={{ request.get_full_path }}">webmaster@localhost</a>
+        </p>
+    </div>
+</section>
+{% endblock %}

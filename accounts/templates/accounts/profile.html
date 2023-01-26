@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}{% load static %}
+{% block title %}Profile: {{ user.get_username }}{% endblock %}
+{% block keywords %}Profile{% endblock %}
+{% block description %}Profile: {{ user.get_username }}{% endblock %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img alt="{{ user.get_username }}" class="card-img-top" src="{% static 'accounts/images/profile.svg' %}">
+            <div class="card-body">
+                <h5 class="card-title">@{{ user.get_username }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a class="btn btn-primary" href="#">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

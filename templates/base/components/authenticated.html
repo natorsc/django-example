@@ -1,0 +1,17 @@
+<div class="dropdown">
+    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-display="static" data-bs-toggle="dropdown"
+       href="#" role="button">
+        {{ user.username }}
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="{% url 'accounts:profile' %}">Perfil</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="{% url 'admin:index' %}">Configurações</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="{% url 'logout' %}">Sair</a></li>
+    </ul>
+</div>

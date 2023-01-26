@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% load django_bootstrap5 %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<section>
+    <div class="container">
+        <h1>Login</h1>
+        {% bootstrap_messages %}
+        <form class="form my-4" method="post">{% csrf_token %}
+            {% bootstrap_form form %}
+            {% bootstrap_button button_type="submit" content="Acessar" extra_classes="my-4" %}
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,13 @@
+# [Docker](https://docs.docker.com/):
+# - `docker-compose up`.
+# - `docker-compose down`.
+
+# [podman](https://podman.io/) - [podman-compose](https://github.com/containers/podman-compose):
+# - `podman-compose up`.
+# - `podman-compose down.
+
+services:
+  memcached_db_container:
+    image: memcached:1.6.18-alpine
+    ports:
+      - 11211:11211
