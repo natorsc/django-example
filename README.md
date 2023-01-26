@@ -1,3 +1,5 @@
+![Python e Django](./docs/images/readme/django-cover.png "Python e Django")
+
 # Django
 
 Exemplo de como iniciar um projeto com a linguagem de programação Python e o framework web Django.
